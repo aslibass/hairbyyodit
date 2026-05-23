@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Hair by Yodit monogram">
   <title>Hair by Yodit monogram</title>
-  <desc>Lowercase 'y' in Newsreader display, Tamarind, with a Rose dot accent — for favicon, social profile, and other square contexts where the full wordmark won't fit.</desc>
-  <text x="50" y="78" font-family="'Newsreader', 'Times New Roman', Georgia, serif" font-size="88" font-weight="500" fill="#361319" text-anchor="middle">y</text>
+  <desc>Lowercase 'y' in Newsreader display, Tamarind, with a Rose dot accent — for favicon, social profile, and other square contexts.</desc>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&amp;display=swap');
+      .mono-y { font-family: 'Newsreader', 'Times New Roman', Georgia, serif; font-weight: 500; font-size: 88px; }
+    </style>
+  </defs>
+  <text x="50" y="78" class="mono-y" fill="#361319" text-anchor="middle">y</text>
   <circle cx="74" cy="36" r="3.8" fill="#B85A5F"/>
 </svg>

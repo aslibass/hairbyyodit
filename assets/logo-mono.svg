@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 84" role="img" aria-label="Hair by Yodit (monochrome)">
   <title>Hair by Yodit — monochrome</title>
-  <desc>Single-colour wordmark for contexts where the Rose accent can't render (engraving, single-colour print, fax-grade reproduction). Set `fill` and `stroke` on the parent SVG to override.</desc>
-  <text x="6" y="56" font-family="'Newsreader', 'Times New Roman', Georgia, serif" font-size="48" font-weight="500" letter-spacing="0.8" fill="#361319">hair by yodit</text>
+  <desc>Single-colour wordmark for contexts where the Rose accent can't render — engraving, single-plate print, fax-grade reproduction.</desc>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&amp;display=swap');
+      .wm { font-family: 'Newsreader', 'Times New Roman', Georgia, serif; font-weight: 500; font-size: 48px; letter-spacing: 0.8px; }
+    </style>
+  </defs>
+  <text x="6" y="56" class="wm" fill="#361319">hair by yodit</text>
   <line x1="194" y1="66" x2="308" y2="66" stroke="#361319" stroke-width="1.6" stroke-linecap="square"/>
 </svg>
