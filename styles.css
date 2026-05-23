@@ -406,37 +406,27 @@ a:focus-visible {
 
 .embed-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 56px 40px;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
-@media (max-width: 900px) {
-  .embed-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 600px) {
-  .embed-grid { grid-template-columns: 1fr; }
+@media (max-width: 700px) {
+  .embed-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
 }
 
 .embed {
   margin: 0;
   background: var(--paper);
   border-radius: 4px;
-  overflow: hidden;
-  transition: transform 200ms ease-out;
-  position: relative;
+  padding: 28px 28px 20px;
+  display: flex;
+  flex-direction: column;
 }
-
-.embed::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--tamarind);
-  opacity: 0.03;
-  pointer-events: none;
-  transition: opacity 150ms ease-out;
-}
-.embed:hover::after { opacity: 0; }
 
 .embed blockquote.instagram-media {
   margin: 0 !important;
@@ -446,12 +436,16 @@ a:focus-visible {
 }
 
 .embed figcaption {
-  font-family: var(--body);
+  font-family: var(--display);
+  font-variation-settings: 'opsz' 72;
   font-weight: 500;
-  font-size: 13px;
-  color: var(--boho);
-  letter-spacing: 0.02em;
-  padding: 12px 16px 16px;
+  font-size: 19px;
+  color: var(--tamarind);
+  letter-spacing: -0.005em;
+  line-height: 1.3;
+  padding: 0 0 16px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid var(--hairline-rose);
   text-align: left;
 }
 
