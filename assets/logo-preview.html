@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hair by Yodit — logo preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #F4ECDD;
+      --sand: #EAD9B8;
+      --camel: #C6B39A;
+      --rose: #B85A5F;
+      --tamarind: #361319;
+      --boho: #7B694E;
+      --italian-roast: #280B0F;
+      --hairline-rose: rgba(184, 90, 95, 0.3);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Karla', sans-serif; color: var(--tamarind); background: var(--paper); -webkit-font-smoothing: antialiased; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 80px 32px 120px; }
+    h1 { font-family: 'Newsreader', serif; font-variation-settings: 'opsz' 72; font-weight: 500; font-size: 40px; margin: 0 0 12px; letter-spacing: -0.005em; line-height: 1.1; }
+    .subtitle { color: var(--boho); font-size: 17px; line-height: 1.55; margin: 0 0 48px; max-width: 60ch; }
+    .swatch { margin: 40px 0; }
+    .swatch-label { font-size: 13px; color: var(--boho); letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 14px; font-weight: 500; }
+    .card { padding: 64px; border-radius: 6px; }
+    .card.paper { background: var(--paper); border: 1px solid var(--hairline-rose); }
+    .card.sand { background: var(--sand); }
+    .card.camel { background: var(--camel); }
+    .card.dark { background: var(--italian-roast); }
+    .card.dark .size-label { color: rgba(244, 236, 221, 0.6); }
+    .logo-img { display: block; max-width: 100%; height: auto; }
+    .size-row { display: flex; align-items: flex-end; gap: 48px; flex-wrap: wrap; }
+    .size-row > div { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+    .size-label { font-size: 12px; color: var(--boho); letter-spacing: 0.04em; }
+    .note { background: rgba(184, 90, 95, 0.07); padding: 24px 28px; border-left: 2px solid var(--rose); margin: 24px 0 0; border-radius: 0 4px 4px 0; }
+    .note p { margin: 0 0 10px; font-size: 15px; line-height: 1.65; }
+    .note p:last-child { margin: 0; }
+    code { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 13px; background: rgba(123, 105, 78, 0.15); padding: 2px 7px; border-radius: 3px; }
+    .section-divider { height: 1px; background: var(--hairline-rose); margin: 64px 0; border: 0; }
+    section h2 { font-family: 'Newsreader', serif; font-variation-settings: 'opsz' 72; font-weight: 500; font-size: 28px; margin: 0 0 24px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Hair by Yodit — logo</h1>
+    <p class="subtitle">Style-guide-derived wordmark and monogram. Newsreader display weight 500 in Tamarind <code>#361319</code>. Rose underline <code>#B85A5F</code> beneath "yodit" as the brand's signature — echoes the price-reveal underline that runs on the live site.</p>
+
+    <section>
+      <h2>Primary wordmark</h2>
+
+      <div class="swatch">
+        <p class="swatch-label">On Paper (default)</p>
+        <div class="card paper">
+          <img src="logo.svg" alt="Hair by Yodit" class="logo-img" style="width: 440px;">
+        </div>
+      </div>
+
+      <div class="swatch">
+        <p class="swatch-label">On Sand</p>
+        <div class="card sand">
+          <img src="logo.svg" alt="Hair by Yodit" class="logo-img" style="width: 440px;">
+        </div>
+      </div>
+
+      <div class="swatch">
+        <p class="swatch-label">On Camel</p>
+        <div class="card camel">
+          <img src="logo.svg" alt="Hair by Yodit" class="logo-img" style="width: 440px;">
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section>
+      <h2>Monogram</h2>
+      <p class="subtitle" style="margin-bottom: 32px;">Lowercase 'y' with the Rose dot as a tittle-like accent. For favicon, social profile picture, and any square context where the full wordmark won't fit.</p>
+
+      <div class="swatch">
+        <p class="swatch-label">Sizes on Paper</p>
+        <div class="card paper">
+          <div class="size-row">
+            <div><img src="logo-mark.svg" alt="" style="width: 144px;"><p class="size-label">144 × 144 — social</p></div>
+            <div><img src="logo-mark.svg" alt="" style="width: 96px;"><p class="size-label">96 × 96 — app icon</p></div>
+            <div><img src="logo-mark.svg" alt="" style="width: 64px;"><p class="size-label">64 × 64</p></div>
+            <div><img src="logo-mark.svg" alt="" style="width: 32px;"><p class="size-label">32 × 32 — favicon</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section>
+      <h2>Wordmark at on-site sizes</h2>
+
+      <div class="swatch">
+        <p class="swatch-label">Header (≈180px)</p>
+        <div class="card paper">
+          <img src="logo.svg" alt="Hair by Yodit" style="width: 180px;">
+        </div>
+      </div>
+
+      <div class="swatch">
+        <p class="swatch-label">Footer (≈140px)</p>
+        <div class="card paper">
+          <img src="logo.svg" alt="Hair by Yodit" style="width: 140px;">
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section>
+      <h2>Monochrome variant</h2>
+      <p class="subtitle" style="margin-bottom: 32px;">Single-colour wordmark for contexts where the Rose accent can't render — engraving, single-plate print, fax-grade reproduction.</p>
+
+      <div class="swatch">
+        <p class="swatch-label">On Paper</p>
+        <div class="card paper">
+          <img src="logo-mono.svg" alt="Hair by Yodit" class="logo-img" style="width: 440px;">
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section>
+      <h2>Production notes</h2>
+      <div class="note">
+        <p><strong>Files in this folder:</strong> <code>logo.svg</code> (primary wordmark, Tamarind + Rose), <code>logo-mark.svg</code> (monogram), <code>logo-mono.svg</code> (single-colour wordmark).</p>
+        <p><strong>Fonts:</strong> the SVGs reference Newsreader (Google Fonts, SIL OFL). When rendered in a browser or in design software with Newsreader installed, they will look correct. If exporting to PNG or PDF without the font present, the wordmark will fall back to Times / Georgia and the underline will misalign slightly.</p>
+        <p><strong>For raster export (PNG / JPG for social, business cards):</strong> open <code>logo.svg</code> in Figma or Inkscape with Newsreader installed, render at the target size, export PNG. For ultimate portability, also export a version with <strong>text converted to outlines</strong> — that version works everywhere without any font dependency.</p>
+        <p><strong>Spacing rules:</strong> clear space around the wordmark equals the height of the lowercase "x" in "yodit" — roughly 18% of the wordmark height. Don't crowd it.</p>
+        <p><strong>Minimum size:</strong> wordmark legible down to 96px wide. Below that, switch to the monogram.</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
